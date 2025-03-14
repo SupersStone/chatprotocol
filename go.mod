@@ -1,4 +1,4 @@
-module github.com/SupersStone/chatprotocol
+module chatprotocol
 
 go 1.22.7
 
