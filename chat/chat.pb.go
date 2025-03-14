@@ -21,8 +21,8 @@
 package chat
 
 import (
-	common "chatprotocol/common"
 	context "context"
+	common "github.com/SupersStone/chatprotocol/common"
 	sdkws "github.com/openimsdk/protocol/sdkws"
 	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
 	grpc "google.golang.org/grpc"
