@@ -43,6 +43,7 @@ message UserFullInfo{
   int32 isBlocked = 23;
   int32 autoDeleteMsg = 24;
   int32 autoDeleteDuration = 25;
+  int32 onlineStatus = 26;
 }
 
 message ContactFullInfo{
