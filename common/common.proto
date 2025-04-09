@@ -41,6 +41,8 @@ message UserFullInfo{
   string address = 21;
   int32 isContact = 22;
   int32 isBlocked = 23;
+  int32 autoDeleteMsg = 24;
+  int32 autoDeleteDuration = 25;
 }
 
 message ContactFullInfo{
