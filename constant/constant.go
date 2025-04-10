@@ -1,6 +1,6 @@
 package constant
 
-import "github.com/openimsdk/protocol/constant"
+import "github.com/SupersStone/new-protocol/constant"
 
 const (
 	// verificationCode used for.

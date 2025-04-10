@@ -20,7 +20,7 @@ import (
 	"encoding/base64"
 	"fmt"
 	"github.com/SupersStone/chatprotocol/constant"
-	constantpb "github.com/openimsdk/protocol/constant"
+	constantpb "github.com/SupersStone/new-protocol/constant"
 	"github.com/openimsdk/tools/errs"
 	"github.com/skip2/go-qrcode"
 	"image/png"
