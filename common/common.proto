@@ -44,6 +44,7 @@ message UserFullInfo{
   int32 autoDeleteMsg = 24;
   int32 autoDeleteDuration = 25;
   int32 onlineStatus = 26;
+  int32 offlineAt = 27;
 }
 
 message ContactFullInfo{
