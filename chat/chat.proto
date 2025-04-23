@@ -357,6 +357,30 @@ message UpdateContactReq {
 }
 message UpdateContactResp {}
 
+message GetAllOnlineUsersReq {}
+
+// 定义单个服务器上的在线用户列表
+message OnlineUsers {
+  string server_id = 1;       // 服务器 ID
+  repeated int32 user_ids = 2;  // 在线用户 ID 列表
+}
+
+// 获取所有在线用户的响应
+message GetAllOnlineUsersResp {
+  repeated OnlineUsers online_users = 1; // 所有服务器的在线用户列表
+}
+
+message GetAllOfflineUsersReq {}
+
+message OfflineUsers {
+  string server_id = 1;       // 服务器 ID
+  repeated int32 user_ids = 2;  // 在线用户 ID 列表
+}
+
+message GetAllOfflineUsersResp{
+  repeated OfflineUsers offline_users = 1;
+}
+
 service chat {
   // Edit personal information - called by the user or an administrator
   rpc UpdateUserInfo(UpdateUserInfoReq) returns (UpdateUserInfoResp);
@@ -401,5 +425,7 @@ service chat {
   rpc CancelBlock(CancelBlockReq) returns(CancelBlockResp);
   rpc UpdateContact(UpdateContactReq) returns(UpdateContactResp);
 
+  rpc GetAllOnlineUsers(GetAllOnlineUsersReq) returns (GetAllOnlineUsersResp);
+  rpc GetAllOfflineUsers(GetAllOfflineUsersReq) returns (GetAllOfflineUsersResp);
 
 }
