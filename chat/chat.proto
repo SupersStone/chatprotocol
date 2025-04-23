@@ -359,10 +359,9 @@ message UpdateContactResp {}
 
 message GetAllOnlineUsersReq {}
 
-// 定义单个服务器上的在线用户列表
 message OnlineUsers {
-  string server_id = 1;       // 服务器 ID
-  repeated int32 user_ids = 2;  // 在线用户 ID 列表
+  string user_id = 1;       // 用户编号
+  repeated int32 value = 2;  // value值
 }
 
 // 获取所有在线用户的响应
@@ -373,8 +372,8 @@ message GetAllOnlineUsersResp {
 message GetAllOfflineUsersReq {}
 
 message OfflineUsers {
-  string server_id = 1;       // 服务器 ID
-  repeated int32 user_ids = 2;  // 在线用户 ID 列表
+  string user_id = 1;       // 用户编号
+  repeated int32 value = 2;  // value值
 }
 
 message GetAllOfflineUsersResp{
