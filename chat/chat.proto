@@ -380,6 +380,14 @@ message GetAllOfflineUsersResp{
   repeated OfflineUsers offline_users = 1;
 }
 
+message AttributeListReq {
+  repeated string userIDs = 1;
+}
+
+message AttributeListResp {
+  repeated openim.sdkws.Attribute users = 1;
+}
+
 service chat {
   // Edit personal information - called by the user or an administrator
   rpc UpdateUserInfo(UpdateUserInfoReq) returns (UpdateUserInfoResp);
@@ -424,6 +432,7 @@ service chat {
   rpc CancelBlock(CancelBlockReq) returns(CancelBlockResp);
   rpc UpdateContact(UpdateContactReq) returns(UpdateContactResp);
 
+  rpc AttributeList(AttributeListReq) returns (AttributeListResp);
   rpc GetAllOnlineUsers(GetAllOnlineUsersReq) returns (GetAllOnlineUsersResp);
   rpc GetAllOfflineUsers(GetAllOfflineUsersReq) returns (GetAllOfflineUsersResp);
 
