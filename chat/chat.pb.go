@@ -22,9 +22,9 @@ package chat
 
 import (
 	context "context"
+	common "github.com/SupersStone/chatprotocol/common"
 	sdkws "github.com/SupersStone/new-protocol/sdkws"
 	wrapperspb "github.com/SupersStone/new-protocol/wrapperspb"
-	common "github.com/openimsdk/chat/pkg/protocol/common"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
