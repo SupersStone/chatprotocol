@@ -419,6 +419,14 @@ message AttributeListResp {
   repeated Attribute users = 1;
 }
 
+message GetContactListByUserIdsReq {
+  string UserIDs = 1;
+}
+
+message GetContactListByUserIdsResp {
+  repeated openim.chat.common.ContactFullInfo users = 1;
+}
+
 service chat {
   // Edit personal information - called by the user or an administrator
   rpc UpdateUserInfo(UpdateUserInfoReq) returns (UpdateUserInfoResp);
@@ -466,5 +474,7 @@ service chat {
   rpc AttributeList(AttributeListReq) returns (AttributeListResp);
   rpc GetAllOnlineUsers(GetAllOnlineUsersReq) returns (GetAllOnlineUsersResp);
   rpc GetAllOfflineUsers(GetAllOfflineUsersReq) returns (GetAllOfflineUsersResp);
+
+  rpc GetContactListByUserIds(GetContactListByUserIdsReq) returns(GetContactListByUserIdsResp);
 
 }
