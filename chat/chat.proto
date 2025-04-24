@@ -425,7 +425,7 @@ message GetContactListByUserIdsReq {
 }
 
 message GetContactListByUserIdsResp {
-  repeated openim.chat.common.ContactFullInfo users = 1;
+  repeated openim.chat.common.Contact users = 1;
 }
 
 service chat {
