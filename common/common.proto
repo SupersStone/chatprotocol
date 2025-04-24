@@ -16,6 +16,7 @@ syntax = "proto3";
 package openim.chat.common;
 option go_package = "github.com/SupersStone/chatprotocol/common";
 
+import "wrapperspb/wrapperspb.proto";
 
 message UserFullInfo{
   string  userID = 1;
@@ -71,7 +72,7 @@ message ContactFullInfo{
   bool isBlocked = 21;
   string address = 22;
   int32 onlineStatus = 23;
-  int32 offlineAt = 24;
+  openim.protobuf.Int32Value offlineAt = 24;
 }
 
 message Contact {
