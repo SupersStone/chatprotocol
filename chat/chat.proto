@@ -414,6 +414,7 @@ message Attribute {
   int32 AutoDeleteDuration = 27;
   int32 AllowVoiceCalls = 28;
   int32 AllowGroupInvitations = 29;
+  string QrcodeUrl = 30;
 }
 message AttributeListResp {
   repeated Attribute users = 1;
