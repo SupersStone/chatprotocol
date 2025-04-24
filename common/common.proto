@@ -74,6 +74,17 @@ message ContactFullInfo{
   int32 offlineAt = 24;
 }
 
+message Contact {
+  string ownerUserID = 1;
+  string contactUserID = 2;
+  int64 createTime = 3;
+  string operatorUserID = 4;
+  string ex = 5;
+  bool status = 6;
+  bool isBlock = 7;
+  string remarkName = 8;
+  string remarkSurname = 9;
+}
 
 message UserPublicInfo{
   string  userID = 1;
