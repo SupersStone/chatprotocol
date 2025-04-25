@@ -322,7 +322,7 @@ message CreateContactResp {}
 
 message DelContactReq {
   string userId = 1;
-  repeated string contactUserId = 2;
+  repeated string contactUserIds = 2;
 }
 
 message DelContactResp {}
