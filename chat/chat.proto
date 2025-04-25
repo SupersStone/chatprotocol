@@ -358,6 +358,13 @@ message UpdateContactReq {
 }
 message UpdateContactResp {}
 
+message BlockContactListReq {
+  string userId = 1;
+}
+message BlockContactListResp {
+  repeated openim.chat.common.UserPublicInfo users = 1;
+}
+
 message GetAllOnlineUsersReq {}
 
 message OnlineUsers {
@@ -472,6 +479,7 @@ service chat {
   rpc BlockContact(BlockContactReq) returns(BlockContactResp);
   rpc CancelBlock(CancelBlockReq) returns(CancelBlockResp);
   rpc UpdateContact(UpdateContactReq) returns(UpdateContactResp);
+  rpc BlockContactList(BlockContactListReq) returns(BlockContactListResp);
 
   rpc AttributeList(AttributeListReq) returns (AttributeListResp);
   rpc GetAllOnlineUsers(GetAllOnlineUsersReq) returns (GetAllOnlineUsersResp);
