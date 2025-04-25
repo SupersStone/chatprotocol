@@ -353,7 +353,8 @@ message CancelBlockResp {}
 message UpdateContactReq {
   string userId = 1;
   string contactUserId = 2;
-  string remark = 3;
+  string remarkName = 3;
+  string remarkSurName = 4;
 }
 message UpdateContactResp {}
 
