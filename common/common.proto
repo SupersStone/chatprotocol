@@ -73,6 +73,8 @@ message ContactFullInfo{
   string address = 22;
   int32 onlineStatus = 23;
   openim.protobuf.Int32Value offlineAt = 24;
+  openim.protobuf.StringValue remarkName = 25;
+  openim.protobuf.StringValue remarkSurname = 26;
 }
 
 message Contact {
