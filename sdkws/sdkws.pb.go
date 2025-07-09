@@ -5999,7 +5999,7 @@ const file_sdkws_sdkws_proto_rawDesc = "" +
 	"\x15AllowGroupInvitations\x18\x1d \x01(\x05R\x15AllowGroupInvitations*0\n" +
 	"\tPullOrder\x12\x10\n" +
 	"\fPullOrderAsc\x10\x00\x12\x11\n" +
-	"\rPullOrderDesc\x10\x01B+Z)github.com/SupersStone/chatprotocol/sdkwsb\x06proto3"
+	"\rPullOrderDesc\x10\x01B+Z)github.com/SupersStone/new-protocol/sdkwsb\x06proto3"
 
 var (
 	file_sdkws_sdkws_proto_rawDescOnce sync.Once
