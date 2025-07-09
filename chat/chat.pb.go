@@ -22,7 +22,7 @@ package chat
 
 import (
 	common "github.com/SupersStone/chatprotocol/common"
-	sdkws "github.com/SupersStone/chatprotocol/sdkws"
+	sdkws "github.com/SupersStone/new-protocol/sdkws"
 	wrapperspb "github.com/SupersStone/new-protocol/wrapperspb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
@@ -4784,7 +4784,7 @@ const file_chat_chat_proto_rawDesc = "" +
 	"\rAttributeList\x12\x1d.openim.chat.AttributeListReq\x1a\x1e.openim.chat.AttributeListResp\x12Z\n" +
 	"\x11GetAllOnlineUsers\x12!.openim.chat.GetAllOnlineUsersReq\x1a\".openim.chat.GetAllOnlineUsersResp\x12]\n" +
 	"\x12GetAllOfflineUsers\x12\".openim.chat.GetAllOfflineUsersReq\x1a#.openim.chat.GetAllOfflineUsersResp\x12l\n" +
-	"\x17GetContactListByUserIds\x12'.openim.chat.GetContactListByUserIdsReq\x1a(.openim.chat.GetContactListByUserIdsRespB*Z(github.com/SupersStone/chatprotocol/chatb\x06proto3"
+	"\x17GetContactListByUserIds\x12'.openim.chat.GetContactListByUserIdsReq\x1a(.openim.chat.GetContactListByUserIdsRespB-Z+github.com/openimsdk/chat/pkg/protocol/chatb\x06proto3"
 
 var (
 	file_chat_chat_proto_rawDescOnce sync.Once
