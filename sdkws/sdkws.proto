@@ -568,6 +568,8 @@ message Attribute {
   int32 AutoDeleteDuration = 27;
   int32 AllowVoiceCalls = 28;
   int32 AllowGroupInvitations = 29;
+  int32 AllowViewLastOnlineTime = 30;
+  int32 AllowSendMessages = 31;
 }
 
 message ContactAttribute {
@@ -596,7 +598,7 @@ message ContactAttribute {
   int32 OnlineStatus = 23;
   string Remark = 24;
   int32 OfflineAt = 25;
-  int32 LastOnlineTimeDisplay = 26;
+  int32 AllowViewLastOnlineTime = 26;
   int32 AllowSendMessages = 27;
   int32 AllowVoiceCalls = 28;
   int32 AllowGroupInvitations = 29;
