@@ -37,36 +37,37 @@ const (
 )
 
 type UserFullInfo struct {
-	state              protoimpl.MessageState `protogen:"open.v1"`
-	UserID             string                 `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID,omitempty"`
-	Password           string                 `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
-	Account            string                 `protobuf:"bytes,3,opt,name=account,proto3" json:"account,omitempty"`
-	PhoneNumber        string                 `protobuf:"bytes,4,opt,name=phoneNumber,proto3" json:"phoneNumber,omitempty"`
-	AreaCode           string                 `protobuf:"bytes,5,opt,name=areaCode,proto3" json:"areaCode,omitempty"`
-	Email              string                 `protobuf:"bytes,6,opt,name=email,proto3" json:"email,omitempty"`
-	Nickname           string                 `protobuf:"bytes,7,opt,name=nickname,proto3" json:"nickname,omitempty"`
-	FaceURL            string                 `protobuf:"bytes,8,opt,name=faceURL,proto3" json:"faceURL,omitempty"`
-	Gender             int32                  `protobuf:"varint,9,opt,name=gender,proto3" json:"gender,omitempty"`
-	Level              int32                  `protobuf:"varint,10,opt,name=level,proto3" json:"level,omitempty"`
-	Birth              int64                  `protobuf:"varint,11,opt,name=birth,proto3" json:"birth,omitempty"`
-	AllowAddFriend     int32                  `protobuf:"varint,12,opt,name=allowAddFriend,proto3" json:"allowAddFriend,omitempty"`
-	AllowBeep          int32                  `protobuf:"varint,13,opt,name=allowBeep,proto3" json:"allowBeep,omitempty"`
-	AllowVibration     int32                  `protobuf:"varint,14,opt,name=allowVibration,proto3" json:"allowVibration,omitempty"`
-	GlobalRecvMsgOpt   int32                  `protobuf:"varint,15,opt,name=globalRecvMsgOpt,proto3" json:"globalRecvMsgOpt,omitempty"`
-	RegisterType       int32                  `protobuf:"varint,16,opt,name=registerType,proto3" json:"registerType,omitempty"`
-	SurName            string                 `protobuf:"bytes,17,opt,name=surName,proto3" json:"surName,omitempty"`
-	Name               string                 `protobuf:"bytes,18,opt,name=name,proto3" json:"name,omitempty"`
-	QrcodeUrl          string                 `protobuf:"bytes,19,opt,name=qrcodeUrl,proto3" json:"qrcodeUrl,omitempty"`
-	PublicKey          string                 `protobuf:"bytes,20,opt,name=publicKey,proto3" json:"publicKey,omitempty"`
-	Address            string                 `protobuf:"bytes,21,opt,name=address,proto3" json:"address,omitempty"`
-	IsContact          int32                  `protobuf:"varint,22,opt,name=isContact,proto3" json:"isContact,omitempty"`
-	IsBlocked          int32                  `protobuf:"varint,23,opt,name=isBlocked,proto3" json:"isBlocked,omitempty"`
-	AutoDeleteMsg      int32                  `protobuf:"varint,24,opt,name=autoDeleteMsg,proto3" json:"autoDeleteMsg,omitempty"`
-	AutoDeleteDuration int32                  `protobuf:"varint,25,opt,name=autoDeleteDuration,proto3" json:"autoDeleteDuration,omitempty"`
-	OnlineStatus       int32                  `protobuf:"varint,26,opt,name=onlineStatus,proto3" json:"onlineStatus,omitempty"`
-	OfflineAt          int32                  `protobuf:"varint,27,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
-	unknownFields      protoimpl.UnknownFields
-	sizeCache          protoimpl.SizeCache
+	state                   protoimpl.MessageState `protogen:"open.v1"`
+	UserID                  string                 `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID,omitempty"`
+	Password                string                 `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
+	Account                 string                 `protobuf:"bytes,3,opt,name=account,proto3" json:"account,omitempty"`
+	PhoneNumber             string                 `protobuf:"bytes,4,opt,name=phoneNumber,proto3" json:"phoneNumber,omitempty"`
+	AreaCode                string                 `protobuf:"bytes,5,opt,name=areaCode,proto3" json:"areaCode,omitempty"`
+	Email                   string                 `protobuf:"bytes,6,opt,name=email,proto3" json:"email,omitempty"`
+	Nickname                string                 `protobuf:"bytes,7,opt,name=nickname,proto3" json:"nickname,omitempty"`
+	FaceURL                 string                 `protobuf:"bytes,8,opt,name=faceURL,proto3" json:"faceURL,omitempty"`
+	Gender                  int32                  `protobuf:"varint,9,opt,name=gender,proto3" json:"gender,omitempty"`
+	Level                   int32                  `protobuf:"varint,10,opt,name=level,proto3" json:"level,omitempty"`
+	Birth                   int64                  `protobuf:"varint,11,opt,name=birth,proto3" json:"birth,omitempty"`
+	AllowAddFriend          int32                  `protobuf:"varint,12,opt,name=allowAddFriend,proto3" json:"allowAddFriend,omitempty"`
+	AllowBeep               int32                  `protobuf:"varint,13,opt,name=allowBeep,proto3" json:"allowBeep,omitempty"`
+	AllowVibration          int32                  `protobuf:"varint,14,opt,name=allowVibration,proto3" json:"allowVibration,omitempty"`
+	GlobalRecvMsgOpt        int32                  `protobuf:"varint,15,opt,name=globalRecvMsgOpt,proto3" json:"globalRecvMsgOpt,omitempty"`
+	RegisterType            int32                  `protobuf:"varint,16,opt,name=registerType,proto3" json:"registerType,omitempty"`
+	SurName                 string                 `protobuf:"bytes,17,opt,name=surName,proto3" json:"surName,omitempty"`
+	Name                    string                 `protobuf:"bytes,18,opt,name=name,proto3" json:"name,omitempty"`
+	QrcodeUrl               string                 `protobuf:"bytes,19,opt,name=qrcodeUrl,proto3" json:"qrcodeUrl,omitempty"`
+	PublicKey               string                 `protobuf:"bytes,20,opt,name=publicKey,proto3" json:"publicKey,omitempty"`
+	Address                 string                 `protobuf:"bytes,21,opt,name=address,proto3" json:"address,omitempty"`
+	IsContact               int32                  `protobuf:"varint,22,opt,name=isContact,proto3" json:"isContact,omitempty"`
+	IsBlocked               int32                  `protobuf:"varint,23,opt,name=isBlocked,proto3" json:"isBlocked,omitempty"`
+	AutoDeleteMsg           int32                  `protobuf:"varint,24,opt,name=autoDeleteMsg,proto3" json:"autoDeleteMsg,omitempty"`
+	AutoDeleteDuration      int32                  `protobuf:"varint,25,opt,name=autoDeleteDuration,proto3" json:"autoDeleteDuration,omitempty"`
+	OnlineStatus            int32                  `protobuf:"varint,26,opt,name=onlineStatus,proto3" json:"onlineStatus,omitempty"`
+	OfflineAt               int32                  `protobuf:"varint,27,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
+	AllowViewLastOnlineTime *wrapperspb.Int32Value `protobuf:"bytes,28,opt,name=AllowViewLastOnlineTime,proto3" json:"AllowViewLastOnlineTime,omitempty"`
+	unknownFields           protoimpl.UnknownFields
+	sizeCache               protoimpl.SizeCache
 }
 
 func (x *UserFullInfo) Reset() {
@@ -286,6 +287,13 @@ func (x *UserFullInfo) GetOfflineAt() int32 {
 		return x.OfflineAt
 	}
 	return 0
+}
+
+func (x *UserFullInfo) GetAllowViewLastOnlineTime() *wrapperspb.Int32Value {
+	if x != nil {
+		return x.AllowViewLastOnlineTime
+	}
+	return nil
 }
 
 type ContactFullInfo struct {
@@ -1084,7 +1092,7 @@ var File_common_common_proto protoreflect.FileDescriptor
 
 const file_common_common_proto_rawDesc = "" +
 	"\n" +
-	"\x13common/common.proto\x12\x12openim.chat.common\x1a\x1bwrapperspb/wrapperspb.proto\"\xc0\x06\n" +
+	"\x13common/common.proto\x12\x12openim.chat.common\x1a\x1bwrapperspb/wrapperspb.proto\"\x97\a\n" +
 	"\fUserFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1113,7 +1121,8 @@ const file_common_common_proto_rawDesc = "" +
 	"\rautoDeleteMsg\x18\x18 \x01(\x05R\rautoDeleteMsg\x12.\n" +
 	"\x12autoDeleteDuration\x18\x19 \x01(\x05R\x12autoDeleteDuration\x12\"\n" +
 	"\fonlineStatus\x18\x1a \x01(\x05R\fonlineStatus\x12\x1c\n" +
-	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\"\xc5\a\n" +
+	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\x12U\n" +
+	"\x17AllowViewLastOnlineTime\x18\x1c \x01(\v2\x1b.openim.protobuf.Int32ValueR\x17AllowViewLastOnlineTime\"\xc5\a\n" +
 	"\x0fContactFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1234,15 +1243,16 @@ var file_common_common_proto_goTypes = []any{
 	(*wrapperspb.StringValue)(nil), // 8: openim.protobuf.StringValue
 }
 var file_common_common_proto_depIdxs = []int32{
-	7, // 0: openim.chat.common.ContactFullInfo.offlineAt:type_name -> openim.protobuf.Int32Value
-	8, // 1: openim.chat.common.ContactFullInfo.remarkName:type_name -> openim.protobuf.StringValue
-	8, // 2: openim.chat.common.ContactFullInfo.remarkSurname:type_name -> openim.protobuf.StringValue
-	7, // 3: openim.chat.common.ContactFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
-	4, // [4:4] is the sub-list for method output_type
-	4, // [4:4] is the sub-list for method input_type
-	4, // [4:4] is the sub-list for extension type_name
-	4, // [4:4] is the sub-list for extension extendee
-	0, // [0:4] is the sub-list for field type_name
+	7, // 0: openim.chat.common.UserFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
+	7, // 1: openim.chat.common.ContactFullInfo.offlineAt:type_name -> openim.protobuf.Int32Value
+	8, // 2: openim.chat.common.ContactFullInfo.remarkName:type_name -> openim.protobuf.StringValue
+	8, // 3: openim.chat.common.ContactFullInfo.remarkSurname:type_name -> openim.protobuf.StringValue
+	7, // 4: openim.chat.common.ContactFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
+	5, // [5:5] is the sub-list for method output_type
+	5, // [5:5] is the sub-list for method input_type
+	5, // [5:5] is the sub-list for extension type_name
+	5, // [5:5] is the sub-list for extension extendee
+	0, // [0:5] is the sub-list for field type_name
 }
 
 func init() { file_common_common_proto_init() }
