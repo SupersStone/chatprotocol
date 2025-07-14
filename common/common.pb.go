@@ -65,7 +65,7 @@ type UserFullInfo struct {
 	AutoDeleteDuration      int32                  `protobuf:"varint,25,opt,name=autoDeleteDuration,proto3" json:"autoDeleteDuration,omitempty"`
 	OnlineStatus            int32                  `protobuf:"varint,26,opt,name=onlineStatus,proto3" json:"onlineStatus,omitempty"`
 	OfflineAt               int32                  `protobuf:"varint,27,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
-	AllowViewLastOnlineTime *wrapperspb.Int32Value `protobuf:"bytes,28,opt,name=AllowViewLastOnlineTime,proto3" json:"AllowViewLastOnlineTime,omitempty"`
+	AllowViewLastOnlineTime int32                  `protobuf:"varint,28,opt,name=allowViewLastOnlineTime,proto3" json:"allowViewLastOnlineTime,omitempty"`
 	unknownFields           protoimpl.UnknownFields
 	sizeCache               protoimpl.SizeCache
 }
@@ -289,11 +289,11 @@ func (x *UserFullInfo) GetOfflineAt() int32 {
 	return 0
 }
 
-func (x *UserFullInfo) GetAllowViewLastOnlineTime() *wrapperspb.Int32Value {
+func (x *UserFullInfo) GetAllowViewLastOnlineTime() int32 {
 	if x != nil {
 		return x.AllowViewLastOnlineTime
 	}
-	return nil
+	return 0
 }
 
 type ContactFullInfo struct {
@@ -1092,7 +1092,7 @@ var File_common_common_proto protoreflect.FileDescriptor
 
 const file_common_common_proto_rawDesc = "" +
 	"\n" +
-	"\x13common/common.proto\x12\x12openim.chat.common\x1a\x1bwrapperspb/wrapperspb.proto\"\x97\a\n" +
+	"\x13common/common.proto\x12\x12openim.chat.common\x1a\x1bwrapperspb/wrapperspb.proto\"\xfa\x06\n" +
 	"\fUserFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1121,8 +1121,8 @@ const file_common_common_proto_rawDesc = "" +
 	"\rautoDeleteMsg\x18\x18 \x01(\x05R\rautoDeleteMsg\x12.\n" +
 	"\x12autoDeleteDuration\x18\x19 \x01(\x05R\x12autoDeleteDuration\x12\"\n" +
 	"\fonlineStatus\x18\x1a \x01(\x05R\fonlineStatus\x12\x1c\n" +
-	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\x12U\n" +
-	"\x17AllowViewLastOnlineTime\x18\x1c \x01(\v2\x1b.openim.protobuf.Int32ValueR\x17AllowViewLastOnlineTime\"\xc5\a\n" +
+	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\x128\n" +
+	"\x17allowViewLastOnlineTime\x18\x1c \x01(\x05R\x17allowViewLastOnlineTime\"\xc5\a\n" +
 	"\x0fContactFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1243,16 +1243,15 @@ var file_common_common_proto_goTypes = []any{
 	(*wrapperspb.StringValue)(nil), // 8: openim.protobuf.StringValue
 }
 var file_common_common_proto_depIdxs = []int32{
-	7, // 0: openim.chat.common.UserFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
-	7, // 1: openim.chat.common.ContactFullInfo.offlineAt:type_name -> openim.protobuf.Int32Value
-	8, // 2: openim.chat.common.ContactFullInfo.remarkName:type_name -> openim.protobuf.StringValue
-	8, // 3: openim.chat.common.ContactFullInfo.remarkSurname:type_name -> openim.protobuf.StringValue
-	7, // 4: openim.chat.common.ContactFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
-	5, // [5:5] is the sub-list for method output_type
-	5, // [5:5] is the sub-list for method input_type
-	5, // [5:5] is the sub-list for extension type_name
-	5, // [5:5] is the sub-list for extension extendee
-	0, // [0:5] is the sub-list for field type_name
+	7, // 0: openim.chat.common.ContactFullInfo.offlineAt:type_name -> openim.protobuf.Int32Value
+	8, // 1: openim.chat.common.ContactFullInfo.remarkName:type_name -> openim.protobuf.StringValue
+	8, // 2: openim.chat.common.ContactFullInfo.remarkSurname:type_name -> openim.protobuf.StringValue
+	7, // 3: openim.chat.common.ContactFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
+	4, // [4:4] is the sub-list for method output_type
+	4, // [4:4] is the sub-list for method input_type
+	4, // [4:4] is the sub-list for extension type_name
+	4, // [4:4] is the sub-list for extension extendee
+	0, // [0:4] is the sub-list for field type_name
 }
 
 func init() { file_common_common_proto_init() }

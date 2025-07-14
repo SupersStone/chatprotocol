@@ -46,7 +46,7 @@ message UserFullInfo{
   int32 autoDeleteDuration = 25;
   int32 onlineStatus = 26;
   int32 offlineAt = 27;
-  openim.protobuf.Int32Value AllowViewLastOnlineTime = 28;
+  int32 allowViewLastOnlineTime = 28;
 }
 
 message ContactFullInfo{
