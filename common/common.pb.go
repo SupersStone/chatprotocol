@@ -289,35 +289,36 @@ func (x *UserFullInfo) GetOfflineAt() int32 {
 }
 
 type ContactFullInfo struct {
-	state            protoimpl.MessageState  `protogen:"open.v1"`
-	UserID           string                  `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID,omitempty"`
-	Password         string                  `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
-	Account          string                  `protobuf:"bytes,3,opt,name=account,proto3" json:"account,omitempty"`
-	PhoneNumber      string                  `protobuf:"bytes,4,opt,name=phoneNumber,proto3" json:"phoneNumber,omitempty"`
-	AreaCode         string                  `protobuf:"bytes,5,opt,name=areaCode,proto3" json:"areaCode,omitempty"`
-	Email            string                  `protobuf:"bytes,6,opt,name=email,proto3" json:"email,omitempty"`
-	Nickname         string                  `protobuf:"bytes,7,opt,name=nickname,proto3" json:"nickname,omitempty"`
-	FaceURL          string                  `protobuf:"bytes,8,opt,name=faceURL,proto3" json:"faceURL,omitempty"`
-	Gender           int32                   `protobuf:"varint,9,opt,name=gender,proto3" json:"gender,omitempty"`
-	Level            int32                   `protobuf:"varint,10,opt,name=level,proto3" json:"level,omitempty"`
-	Birth            int64                   `protobuf:"varint,11,opt,name=birth,proto3" json:"birth,omitempty"`
-	AllowAddFriend   int32                   `protobuf:"varint,12,opt,name=allowAddFriend,proto3" json:"allowAddFriend,omitempty"`
-	AllowBeep        int32                   `protobuf:"varint,13,opt,name=allowBeep,proto3" json:"allowBeep,omitempty"`
-	AllowVibration   int32                   `protobuf:"varint,14,opt,name=allowVibration,proto3" json:"allowVibration,omitempty"`
-	GlobalRecvMsgOpt int32                   `protobuf:"varint,15,opt,name=globalRecvMsgOpt,proto3" json:"globalRecvMsgOpt,omitempty"`
-	RegisterType     int32                   `protobuf:"varint,16,opt,name=registerType,proto3" json:"registerType,omitempty"`
-	SurName          string                  `protobuf:"bytes,17,opt,name=surName,proto3" json:"surName,omitempty"`
-	Name             string                  `protobuf:"bytes,18,opt,name=name,proto3" json:"name,omitempty"`
-	QrcodeUrl        string                  `protobuf:"bytes,19,opt,name=qrcodeUrl,proto3" json:"qrcodeUrl,omitempty"`
-	PublicKey        string                  `protobuf:"bytes,20,opt,name=publicKey,proto3" json:"publicKey,omitempty"`
-	IsBlocked        bool                    `protobuf:"varint,21,opt,name=isBlocked,proto3" json:"isBlocked,omitempty"`
-	Address          string                  `protobuf:"bytes,22,opt,name=address,proto3" json:"address,omitempty"`
-	OnlineStatus     int32                   `protobuf:"varint,23,opt,name=onlineStatus,proto3" json:"onlineStatus,omitempty"`
-	OfflineAt        *wrapperspb.Int32Value  `protobuf:"bytes,24,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
-	RemarkName       *wrapperspb.StringValue `protobuf:"bytes,25,opt,name=remarkName,proto3" json:"remarkName,omitempty"`
-	RemarkSurname    *wrapperspb.StringValue `protobuf:"bytes,26,opt,name=remarkSurname,proto3" json:"remarkSurname,omitempty"`
-	unknownFields    protoimpl.UnknownFields
-	sizeCache        protoimpl.SizeCache
+	state                   protoimpl.MessageState  `protogen:"open.v1"`
+	UserID                  string                  `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID,omitempty"`
+	Password                string                  `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
+	Account                 string                  `protobuf:"bytes,3,opt,name=account,proto3" json:"account,omitempty"`
+	PhoneNumber             string                  `protobuf:"bytes,4,opt,name=phoneNumber,proto3" json:"phoneNumber,omitempty"`
+	AreaCode                string                  `protobuf:"bytes,5,opt,name=areaCode,proto3" json:"areaCode,omitempty"`
+	Email                   string                  `protobuf:"bytes,6,opt,name=email,proto3" json:"email,omitempty"`
+	Nickname                string                  `protobuf:"bytes,7,opt,name=nickname,proto3" json:"nickname,omitempty"`
+	FaceURL                 string                  `protobuf:"bytes,8,opt,name=faceURL,proto3" json:"faceURL,omitempty"`
+	Gender                  int32                   `protobuf:"varint,9,opt,name=gender,proto3" json:"gender,omitempty"`
+	Level                   int32                   `protobuf:"varint,10,opt,name=level,proto3" json:"level,omitempty"`
+	Birth                   int64                   `protobuf:"varint,11,opt,name=birth,proto3" json:"birth,omitempty"`
+	AllowAddFriend          int32                   `protobuf:"varint,12,opt,name=allowAddFriend,proto3" json:"allowAddFriend,omitempty"`
+	AllowBeep               int32                   `protobuf:"varint,13,opt,name=allowBeep,proto3" json:"allowBeep,omitempty"`
+	AllowVibration          int32                   `protobuf:"varint,14,opt,name=allowVibration,proto3" json:"allowVibration,omitempty"`
+	GlobalRecvMsgOpt        int32                   `protobuf:"varint,15,opt,name=globalRecvMsgOpt,proto3" json:"globalRecvMsgOpt,omitempty"`
+	RegisterType            int32                   `protobuf:"varint,16,opt,name=registerType,proto3" json:"registerType,omitempty"`
+	SurName                 string                  `protobuf:"bytes,17,opt,name=surName,proto3" json:"surName,omitempty"`
+	Name                    string                  `protobuf:"bytes,18,opt,name=name,proto3" json:"name,omitempty"`
+	QrcodeUrl               string                  `protobuf:"bytes,19,opt,name=qrcodeUrl,proto3" json:"qrcodeUrl,omitempty"`
+	PublicKey               string                  `protobuf:"bytes,20,opt,name=publicKey,proto3" json:"publicKey,omitempty"`
+	IsBlocked               bool                    `protobuf:"varint,21,opt,name=isBlocked,proto3" json:"isBlocked,omitempty"`
+	Address                 string                  `protobuf:"bytes,22,opt,name=address,proto3" json:"address,omitempty"`
+	OnlineStatus            int32                   `protobuf:"varint,23,opt,name=onlineStatus,proto3" json:"onlineStatus,omitempty"`
+	OfflineAt               *wrapperspb.Int32Value  `protobuf:"bytes,24,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
+	RemarkName              *wrapperspb.StringValue `protobuf:"bytes,25,opt,name=remarkName,proto3" json:"remarkName,omitempty"`
+	RemarkSurname           *wrapperspb.StringValue `protobuf:"bytes,26,opt,name=remarkSurname,proto3" json:"remarkSurname,omitempty"`
+	AllowViewLastOnlineTime *wrapperspb.Int32Value  `protobuf:"bytes,27,opt,name=AllowViewLastOnlineTime,proto3" json:"AllowViewLastOnlineTime,omitempty"`
+	unknownFields           protoimpl.UnknownFields
+	sizeCache               protoimpl.SizeCache
 }
 
 func (x *ContactFullInfo) Reset() {
@@ -528,6 +529,13 @@ func (x *ContactFullInfo) GetRemarkName() *wrapperspb.StringValue {
 func (x *ContactFullInfo) GetRemarkSurname() *wrapperspb.StringValue {
 	if x != nil {
 		return x.RemarkSurname
+	}
+	return nil
+}
+
+func (x *ContactFullInfo) GetAllowViewLastOnlineTime() *wrapperspb.Int32Value {
+	if x != nil {
+		return x.AllowViewLastOnlineTime
 	}
 	return nil
 }
@@ -1105,7 +1113,7 @@ const file_common_common_proto_rawDesc = "" +
 	"\rautoDeleteMsg\x18\x18 \x01(\x05R\rautoDeleteMsg\x12.\n" +
 	"\x12autoDeleteDuration\x18\x19 \x01(\x05R\x12autoDeleteDuration\x12\"\n" +
 	"\fonlineStatus\x18\x1a \x01(\x05R\fonlineStatus\x12\x1c\n" +
-	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\"\xee\x06\n" +
+	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\"\xc5\a\n" +
 	"\x0fContactFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1135,7 +1143,8 @@ const file_common_common_proto_rawDesc = "" +
 	"\n" +
 	"remarkName\x18\x19 \x01(\v2\x1c.openim.protobuf.StringValueR\n" +
 	"remarkName\x12B\n" +
-	"\rremarkSurname\x18\x1a \x01(\v2\x1c.openim.protobuf.StringValueR\rremarkSurname\"\xa1\x02\n" +
+	"\rremarkSurname\x18\x1a \x01(\v2\x1c.openim.protobuf.StringValueR\rremarkSurname\x12U\n" +
+	"\x17AllowViewLastOnlineTime\x18\x1b \x01(\v2\x1b.openim.protobuf.Int32ValueR\x17AllowViewLastOnlineTime\"\xa1\x02\n" +
 	"\aContact\x12 \n" +
 	"\vownerUserID\x18\x01 \x01(\tR\vownerUserID\x12$\n" +
 	"\rcontactUserID\x18\x02 \x01(\tR\rcontactUserID\x12\x1e\n" +
@@ -1228,11 +1237,12 @@ var file_common_common_proto_depIdxs = []int32{
 	7, // 0: openim.chat.common.ContactFullInfo.offlineAt:type_name -> openim.protobuf.Int32Value
 	8, // 1: openim.chat.common.ContactFullInfo.remarkName:type_name -> openim.protobuf.StringValue
 	8, // 2: openim.chat.common.ContactFullInfo.remarkSurname:type_name -> openim.protobuf.StringValue
-	3, // [3:3] is the sub-list for method output_type
-	3, // [3:3] is the sub-list for method input_type
-	3, // [3:3] is the sub-list for extension type_name
-	3, // [3:3] is the sub-list for extension extendee
-	0, // [0:3] is the sub-list for field type_name
+	7, // 3: openim.chat.common.ContactFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
+	4, // [4:4] is the sub-list for method output_type
+	4, // [4:4] is the sub-list for method input_type
+	4, // [4:4] is the sub-list for extension type_name
+	4, // [4:4] is the sub-list for extension extendee
+	0, // [0:4] is the sub-list for field type_name
 }
 
 func init() { file_common_common_proto_init() }
