@@ -66,6 +66,9 @@ type UserFullInfo struct {
 	OnlineStatus            int32                  `protobuf:"varint,26,opt,name=onlineStatus,proto3" json:"onlineStatus,omitempty"`
 	OfflineAt               int32                  `protobuf:"varint,27,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
 	AllowViewLastOnlineTime int32                  `protobuf:"varint,28,opt,name=allowViewLastOnlineTime,proto3" json:"allowViewLastOnlineTime,omitempty"`
+	AllowVoiceCalls         int32                  `protobuf:"varint,29,opt,name=allowVoiceCalls,proto3" json:"allowVoiceCalls,omitempty"`
+	AllowSendMessages       int32                  `protobuf:"varint,30,opt,name=allowSendMessages,proto3" json:"allowSendMessages,omitempty"`
+	AllowGroupInvitations   int32                  `protobuf:"varint,31,opt,name=allowGroupInvitations,proto3" json:"allowGroupInvitations,omitempty"`
 	unknownFields           protoimpl.UnknownFields
 	sizeCache               protoimpl.SizeCache
 }
@@ -296,6 +299,27 @@ func (x *UserFullInfo) GetAllowViewLastOnlineTime() int32 {
 	return 0
 }
 
+func (x *UserFullInfo) GetAllowVoiceCalls() int32 {
+	if x != nil {
+		return x.AllowVoiceCalls
+	}
+	return 0
+}
+
+func (x *UserFullInfo) GetAllowSendMessages() int32 {
+	if x != nil {
+		return x.AllowSendMessages
+	}
+	return 0
+}
+
+func (x *UserFullInfo) GetAllowGroupInvitations() int32 {
+	if x != nil {
+		return x.AllowGroupInvitations
+	}
+	return 0
+}
+
 type ContactFullInfo struct {
 	state                   protoimpl.MessageState  `protogen:"open.v1"`
 	UserID                  string                  `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID,omitempty"`
@@ -324,7 +348,10 @@ type ContactFullInfo struct {
 	OfflineAt               *wrapperspb.Int32Value  `protobuf:"bytes,24,opt,name=offlineAt,proto3" json:"offlineAt,omitempty"`
 	RemarkName              *wrapperspb.StringValue `protobuf:"bytes,25,opt,name=remarkName,proto3" json:"remarkName,omitempty"`
 	RemarkSurname           *wrapperspb.StringValue `protobuf:"bytes,26,opt,name=remarkSurname,proto3" json:"remarkSurname,omitempty"`
-	AllowViewLastOnlineTime *wrapperspb.Int32Value  `protobuf:"bytes,27,opt,name=AllowViewLastOnlineTime,proto3" json:"AllowViewLastOnlineTime,omitempty"`
+	AllowViewLastOnlineTime *wrapperspb.Int32Value  `protobuf:"bytes,27,opt,name=allowViewLastOnlineTime,proto3" json:"allowViewLastOnlineTime,omitempty"`
+	AllowVoiceCalls         *wrapperspb.Int32Value  `protobuf:"bytes,28,opt,name=allowVoiceCalls,proto3" json:"allowVoiceCalls,omitempty"`
+	AllowSendMessages       *wrapperspb.Int32Value  `protobuf:"bytes,29,opt,name=allowSendMessages,proto3" json:"allowSendMessages,omitempty"`
+	AllowGroupInvitations   *wrapperspb.Int32Value  `protobuf:"bytes,30,opt,name=allowGroupInvitations,proto3" json:"allowGroupInvitations,omitempty"`
 	unknownFields           protoimpl.UnknownFields
 	sizeCache               protoimpl.SizeCache
 }
@@ -544,6 +571,27 @@ func (x *ContactFullInfo) GetRemarkSurname() *wrapperspb.StringValue {
 func (x *ContactFullInfo) GetAllowViewLastOnlineTime() *wrapperspb.Int32Value {
 	if x != nil {
 		return x.AllowViewLastOnlineTime
+	}
+	return nil
+}
+
+func (x *ContactFullInfo) GetAllowVoiceCalls() *wrapperspb.Int32Value {
+	if x != nil {
+		return x.AllowVoiceCalls
+	}
+	return nil
+}
+
+func (x *ContactFullInfo) GetAllowSendMessages() *wrapperspb.Int32Value {
+	if x != nil {
+		return x.AllowSendMessages
+	}
+	return nil
+}
+
+func (x *ContactFullInfo) GetAllowGroupInvitations() *wrapperspb.Int32Value {
+	if x != nil {
+		return x.AllowGroupInvitations
 	}
 	return nil
 }
@@ -1092,7 +1140,7 @@ var File_common_common_proto protoreflect.FileDescriptor
 
 const file_common_common_proto_rawDesc = "" +
 	"\n" +
-	"\x13common/common.proto\x12\x12openim.chat.common\x1a\x1bwrapperspb/wrapperspb.proto\"\xfa\x06\n" +
+	"\x13common/common.proto\x12\x12openim.chat.common\x1a\x1bwrapperspb/wrapperspb.proto\"\x88\b\n" +
 	"\fUserFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1122,7 +1170,10 @@ const file_common_common_proto_rawDesc = "" +
 	"\x12autoDeleteDuration\x18\x19 \x01(\x05R\x12autoDeleteDuration\x12\"\n" +
 	"\fonlineStatus\x18\x1a \x01(\x05R\fonlineStatus\x12\x1c\n" +
 	"\tofflineAt\x18\x1b \x01(\x05R\tofflineAt\x128\n" +
-	"\x17allowViewLastOnlineTime\x18\x1c \x01(\x05R\x17allowViewLastOnlineTime\"\xc5\a\n" +
+	"\x17allowViewLastOnlineTime\x18\x1c \x01(\x05R\x17allowViewLastOnlineTime\x12(\n" +
+	"\x0fallowVoiceCalls\x18\x1d \x01(\x05R\x0fallowVoiceCalls\x12,\n" +
+	"\x11allowSendMessages\x18\x1e \x01(\x05R\x11allowSendMessages\x124\n" +
+	"\x15allowGroupInvitations\x18\x1f \x01(\x05R\x15allowGroupInvitations\"\xaa\t\n" +
 	"\x0fContactFullInfo\x12\x16\n" +
 	"\x06userID\x18\x01 \x01(\tR\x06userID\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x18\n" +
@@ -1153,7 +1204,10 @@ const file_common_common_proto_rawDesc = "" +
 	"remarkName\x18\x19 \x01(\v2\x1c.openim.protobuf.StringValueR\n" +
 	"remarkName\x12B\n" +
 	"\rremarkSurname\x18\x1a \x01(\v2\x1c.openim.protobuf.StringValueR\rremarkSurname\x12U\n" +
-	"\x17AllowViewLastOnlineTime\x18\x1b \x01(\v2\x1b.openim.protobuf.Int32ValueR\x17AllowViewLastOnlineTime\"\xa1\x02\n" +
+	"\x17allowViewLastOnlineTime\x18\x1b \x01(\v2\x1b.openim.protobuf.Int32ValueR\x17allowViewLastOnlineTime\x12E\n" +
+	"\x0fallowVoiceCalls\x18\x1c \x01(\v2\x1b.openim.protobuf.Int32ValueR\x0fallowVoiceCalls\x12I\n" +
+	"\x11allowSendMessages\x18\x1d \x01(\v2\x1b.openim.protobuf.Int32ValueR\x11allowSendMessages\x12Q\n" +
+	"\x15allowGroupInvitations\x18\x1e \x01(\v2\x1b.openim.protobuf.Int32ValueR\x15allowGroupInvitations\"\xa1\x02\n" +
 	"\aContact\x12 \n" +
 	"\vownerUserID\x18\x01 \x01(\tR\vownerUserID\x12$\n" +
 	"\rcontactUserID\x18\x02 \x01(\tR\rcontactUserID\x12\x1e\n" +
@@ -1246,12 +1300,15 @@ var file_common_common_proto_depIdxs = []int32{
 	7, // 0: openim.chat.common.ContactFullInfo.offlineAt:type_name -> openim.protobuf.Int32Value
 	8, // 1: openim.chat.common.ContactFullInfo.remarkName:type_name -> openim.protobuf.StringValue
 	8, // 2: openim.chat.common.ContactFullInfo.remarkSurname:type_name -> openim.protobuf.StringValue
-	7, // 3: openim.chat.common.ContactFullInfo.AllowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
-	4, // [4:4] is the sub-list for method output_type
-	4, // [4:4] is the sub-list for method input_type
-	4, // [4:4] is the sub-list for extension type_name
-	4, // [4:4] is the sub-list for extension extendee
-	0, // [0:4] is the sub-list for field type_name
+	7, // 3: openim.chat.common.ContactFullInfo.allowViewLastOnlineTime:type_name -> openim.protobuf.Int32Value
+	7, // 4: openim.chat.common.ContactFullInfo.allowVoiceCalls:type_name -> openim.protobuf.Int32Value
+	7, // 5: openim.chat.common.ContactFullInfo.allowSendMessages:type_name -> openim.protobuf.Int32Value
+	7, // 6: openim.chat.common.ContactFullInfo.allowGroupInvitations:type_name -> openim.protobuf.Int32Value
+	7, // [7:7] is the sub-list for method output_type
+	7, // [7:7] is the sub-list for method input_type
+	7, // [7:7] is the sub-list for extension type_name
+	7, // [7:7] is the sub-list for extension extendee
+	0, // [0:7] is the sub-list for field type_name
 }
 
 func init() { file_common_common_proto_init() }

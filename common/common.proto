@@ -47,6 +47,9 @@ message UserFullInfo{
   int32 onlineStatus = 26;
   int32 offlineAt = 27;
   int32 allowViewLastOnlineTime = 28;
+  int32 allowVoiceCalls = 29;
+  int32 allowSendMessages = 30;
+  int32 allowGroupInvitations = 31;
 }
 
 message ContactFullInfo{
@@ -76,7 +79,10 @@ message ContactFullInfo{
   openim.protobuf.Int32Value offlineAt = 24;
   openim.protobuf.StringValue remarkName = 25;
   openim.protobuf.StringValue remarkSurname = 26;
-  openim.protobuf.Int32Value AllowViewLastOnlineTime = 27;
+  openim.protobuf.Int32Value allowViewLastOnlineTime = 27;
+  openim.protobuf.Int32Value allowVoiceCalls = 28;
+  openim.protobuf.Int32Value allowSendMessages = 29;
+  openim.protobuf.Int32Value allowGroupInvitations = 30;
 }
 
 message Contact {
