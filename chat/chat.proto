@@ -365,19 +365,19 @@ message BlockContactListResp {
   repeated openim.chat.common.UserPublicInfo users = 1;
 }
 
-message ReverseCreateBlockReq {
+message CreateReverseBlockReq {
   string ownerUserID = 1;
   string blockUserID = 2;
 }
 
-message ReverseCreateBlockResp {}
+message CreateReverseBlockResp {}
 
-message ReverseCancelBlockReq {
+message CancelReverseBlockReq {
   string ownerUserID = 1;
   string blockUserID = 2;
 }
 
-message ReverseCancelBlockResp {}
+message CancelReverseBlockResp {}
 
 message ReverseBlockListReq {
   string blockUserID = 1;
@@ -394,19 +394,19 @@ message ReverseBlockListResp {
   repeated ReverseBlockInfo users = 1;
 }
 
-message ReverseCreateContactReq {
+message CreateReverseContactReq {
   string ownerUserID = 1;
   string contactUserID = 2;
 }
 
-message ReverseCreateContactResp {}
+message CreateReverseContactResp {}
 
-message ReverseCancelContactReq {
+message CancelReverseContactReq {
   string ownerUserID = 1;
   string contactUserID = 2;
 }
 
-message ReverseCancelContactResp {}
+message CancelReverseContactResp {}
 
 message ReverseContactListReq {
   string contactUserID = 1;

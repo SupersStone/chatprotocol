@@ -3686,7 +3686,7 @@ func (x *BlockContactListResp) GetUsers() []*common.UserPublicInfo {
 	return nil
 }
 
-type ReverseCreateBlockReq struct {
+type CreateReverseBlockReq struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	OwnerUserID   string                 `protobuf:"bytes,1,opt,name=ownerUserID,proto3" json:"ownerUserID,omitempty"`
 	BlockUserID   string                 `protobuf:"bytes,2,opt,name=blockUserID,proto3" json:"blockUserID,omitempty"`
@@ -3694,20 +3694,20 @@ type ReverseCreateBlockReq struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCreateBlockReq) Reset() {
-	*x = ReverseCreateBlockReq{}
+func (x *CreateReverseBlockReq) Reset() {
+	*x = CreateReverseBlockReq{}
 	mi := &file_chat_chat_proto_msgTypes[64]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCreateBlockReq) String() string {
+func (x *CreateReverseBlockReq) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCreateBlockReq) ProtoMessage() {}
+func (*CreateReverseBlockReq) ProtoMessage() {}
 
-func (x *ReverseCreateBlockReq) ProtoReflect() protoreflect.Message {
+func (x *CreateReverseBlockReq) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[64]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -3719,45 +3719,45 @@ func (x *ReverseCreateBlockReq) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCreateBlockReq.ProtoReflect.Descriptor instead.
-func (*ReverseCreateBlockReq) Descriptor() ([]byte, []int) {
+// Deprecated: Use CreateReverseBlockReq.ProtoReflect.Descriptor instead.
+func (*CreateReverseBlockReq) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{64}
 }
 
-func (x *ReverseCreateBlockReq) GetOwnerUserID() string {
+func (x *CreateReverseBlockReq) GetOwnerUserID() string {
 	if x != nil {
 		return x.OwnerUserID
 	}
 	return ""
 }
 
-func (x *ReverseCreateBlockReq) GetBlockUserID() string {
+func (x *CreateReverseBlockReq) GetBlockUserID() string {
 	if x != nil {
 		return x.BlockUserID
 	}
 	return ""
 }
 
-type ReverseCreateBlockResp struct {
+type CreateReverseBlockResp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCreateBlockResp) Reset() {
-	*x = ReverseCreateBlockResp{}
+func (x *CreateReverseBlockResp) Reset() {
+	*x = CreateReverseBlockResp{}
 	mi := &file_chat_chat_proto_msgTypes[65]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCreateBlockResp) String() string {
+func (x *CreateReverseBlockResp) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCreateBlockResp) ProtoMessage() {}
+func (*CreateReverseBlockResp) ProtoMessage() {}
 
-func (x *ReverseCreateBlockResp) ProtoReflect() protoreflect.Message {
+func (x *CreateReverseBlockResp) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[65]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -3769,12 +3769,12 @@ func (x *ReverseCreateBlockResp) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCreateBlockResp.ProtoReflect.Descriptor instead.
-func (*ReverseCreateBlockResp) Descriptor() ([]byte, []int) {
+// Deprecated: Use CreateReverseBlockResp.ProtoReflect.Descriptor instead.
+func (*CreateReverseBlockResp) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{65}
 }
 
-type ReverseCancelBlockReq struct {
+type CancelReverseBlockReq struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	OwnerUserID   string                 `protobuf:"bytes,1,opt,name=ownerUserID,proto3" json:"ownerUserID,omitempty"`
 	BlockUserID   string                 `protobuf:"bytes,2,opt,name=blockUserID,proto3" json:"blockUserID,omitempty"`
@@ -3782,20 +3782,20 @@ type ReverseCancelBlockReq struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCancelBlockReq) Reset() {
-	*x = ReverseCancelBlockReq{}
+func (x *CancelReverseBlockReq) Reset() {
+	*x = CancelReverseBlockReq{}
 	mi := &file_chat_chat_proto_msgTypes[66]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCancelBlockReq) String() string {
+func (x *CancelReverseBlockReq) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCancelBlockReq) ProtoMessage() {}
+func (*CancelReverseBlockReq) ProtoMessage() {}
 
-func (x *ReverseCancelBlockReq) ProtoReflect() protoreflect.Message {
+func (x *CancelReverseBlockReq) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[66]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -3807,45 +3807,45 @@ func (x *ReverseCancelBlockReq) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCancelBlockReq.ProtoReflect.Descriptor instead.
-func (*ReverseCancelBlockReq) Descriptor() ([]byte, []int) {
+// Deprecated: Use CancelReverseBlockReq.ProtoReflect.Descriptor instead.
+func (*CancelReverseBlockReq) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{66}
 }
 
-func (x *ReverseCancelBlockReq) GetOwnerUserID() string {
+func (x *CancelReverseBlockReq) GetOwnerUserID() string {
 	if x != nil {
 		return x.OwnerUserID
 	}
 	return ""
 }
 
-func (x *ReverseCancelBlockReq) GetBlockUserID() string {
+func (x *CancelReverseBlockReq) GetBlockUserID() string {
 	if x != nil {
 		return x.BlockUserID
 	}
 	return ""
 }
 
-type ReverseCancelBlockResp struct {
+type CancelReverseBlockResp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCancelBlockResp) Reset() {
-	*x = ReverseCancelBlockResp{}
+func (x *CancelReverseBlockResp) Reset() {
+	*x = CancelReverseBlockResp{}
 	mi := &file_chat_chat_proto_msgTypes[67]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCancelBlockResp) String() string {
+func (x *CancelReverseBlockResp) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCancelBlockResp) ProtoMessage() {}
+func (*CancelReverseBlockResp) ProtoMessage() {}
 
-func (x *ReverseCancelBlockResp) ProtoReflect() protoreflect.Message {
+func (x *CancelReverseBlockResp) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[67]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -3857,8 +3857,8 @@ func (x *ReverseCancelBlockResp) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCancelBlockResp.ProtoReflect.Descriptor instead.
-func (*ReverseCancelBlockResp) Descriptor() ([]byte, []int) {
+// Deprecated: Use CancelReverseBlockResp.ProtoReflect.Descriptor instead.
+func (*CancelReverseBlockResp) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{67}
 }
 
@@ -4018,7 +4018,7 @@ func (x *ReverseBlockListResp) GetUsers() []*ReverseBlockInfo {
 	return nil
 }
 
-type ReverseCreateContactReq struct {
+type CreateReverseContactReq struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	OwnerUserID   string                 `protobuf:"bytes,1,opt,name=ownerUserID,proto3" json:"ownerUserID,omitempty"`
 	ContactUserID string                 `protobuf:"bytes,2,opt,name=contactUserID,proto3" json:"contactUserID,omitempty"`
@@ -4026,20 +4026,20 @@ type ReverseCreateContactReq struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCreateContactReq) Reset() {
-	*x = ReverseCreateContactReq{}
+func (x *CreateReverseContactReq) Reset() {
+	*x = CreateReverseContactReq{}
 	mi := &file_chat_chat_proto_msgTypes[71]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCreateContactReq) String() string {
+func (x *CreateReverseContactReq) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCreateContactReq) ProtoMessage() {}
+func (*CreateReverseContactReq) ProtoMessage() {}
 
-func (x *ReverseCreateContactReq) ProtoReflect() protoreflect.Message {
+func (x *CreateReverseContactReq) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[71]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -4051,45 +4051,45 @@ func (x *ReverseCreateContactReq) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCreateContactReq.ProtoReflect.Descriptor instead.
-func (*ReverseCreateContactReq) Descriptor() ([]byte, []int) {
+// Deprecated: Use CreateReverseContactReq.ProtoReflect.Descriptor instead.
+func (*CreateReverseContactReq) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{71}
 }
 
-func (x *ReverseCreateContactReq) GetOwnerUserID() string {
+func (x *CreateReverseContactReq) GetOwnerUserID() string {
 	if x != nil {
 		return x.OwnerUserID
 	}
 	return ""
 }
 
-func (x *ReverseCreateContactReq) GetContactUserID() string {
+func (x *CreateReverseContactReq) GetContactUserID() string {
 	if x != nil {
 		return x.ContactUserID
 	}
 	return ""
 }
 
-type ReverseCreateContactResp struct {
+type CreateReverseContactResp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCreateContactResp) Reset() {
-	*x = ReverseCreateContactResp{}
+func (x *CreateReverseContactResp) Reset() {
+	*x = CreateReverseContactResp{}
 	mi := &file_chat_chat_proto_msgTypes[72]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCreateContactResp) String() string {
+func (x *CreateReverseContactResp) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCreateContactResp) ProtoMessage() {}
+func (*CreateReverseContactResp) ProtoMessage() {}
 
-func (x *ReverseCreateContactResp) ProtoReflect() protoreflect.Message {
+func (x *CreateReverseContactResp) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[72]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -4101,12 +4101,12 @@ func (x *ReverseCreateContactResp) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCreateContactResp.ProtoReflect.Descriptor instead.
-func (*ReverseCreateContactResp) Descriptor() ([]byte, []int) {
+// Deprecated: Use CreateReverseContactResp.ProtoReflect.Descriptor instead.
+func (*CreateReverseContactResp) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{72}
 }
 
-type ReverseCancelContactReq struct {
+type CancelReverseContactReq struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	OwnerUserID   string                 `protobuf:"bytes,1,opt,name=ownerUserID,proto3" json:"ownerUserID,omitempty"`
 	ContactUserID string                 `protobuf:"bytes,2,opt,name=contactUserID,proto3" json:"contactUserID,omitempty"`
@@ -4114,20 +4114,20 @@ type ReverseCancelContactReq struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCancelContactReq) Reset() {
-	*x = ReverseCancelContactReq{}
+func (x *CancelReverseContactReq) Reset() {
+	*x = CancelReverseContactReq{}
 	mi := &file_chat_chat_proto_msgTypes[73]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCancelContactReq) String() string {
+func (x *CancelReverseContactReq) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCancelContactReq) ProtoMessage() {}
+func (*CancelReverseContactReq) ProtoMessage() {}
 
-func (x *ReverseCancelContactReq) ProtoReflect() protoreflect.Message {
+func (x *CancelReverseContactReq) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[73]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -4139,45 +4139,45 @@ func (x *ReverseCancelContactReq) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCancelContactReq.ProtoReflect.Descriptor instead.
-func (*ReverseCancelContactReq) Descriptor() ([]byte, []int) {
+// Deprecated: Use CancelReverseContactReq.ProtoReflect.Descriptor instead.
+func (*CancelReverseContactReq) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{73}
 }
 
-func (x *ReverseCancelContactReq) GetOwnerUserID() string {
+func (x *CancelReverseContactReq) GetOwnerUserID() string {
 	if x != nil {
 		return x.OwnerUserID
 	}
 	return ""
 }
 
-func (x *ReverseCancelContactReq) GetContactUserID() string {
+func (x *CancelReverseContactReq) GetContactUserID() string {
 	if x != nil {
 		return x.ContactUserID
 	}
 	return ""
 }
 
-type ReverseCancelContactResp struct {
+type CancelReverseContactResp struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ReverseCancelContactResp) Reset() {
-	*x = ReverseCancelContactResp{}
+func (x *CancelReverseContactResp) Reset() {
+	*x = CancelReverseContactResp{}
 	mi := &file_chat_chat_proto_msgTypes[74]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ReverseCancelContactResp) String() string {
+func (x *CancelReverseContactResp) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ReverseCancelContactResp) ProtoMessage() {}
+func (*CancelReverseContactResp) ProtoMessage() {}
 
-func (x *ReverseCancelContactResp) ProtoReflect() protoreflect.Message {
+func (x *CancelReverseContactResp) ProtoReflect() protoreflect.Message {
 	mi := &file_chat_chat_proto_msgTypes[74]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -4189,8 +4189,8 @@ func (x *ReverseCancelContactResp) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ReverseCancelContactResp.ProtoReflect.Descriptor instead.
-func (*ReverseCancelContactResp) Descriptor() ([]byte, []int) {
+// Deprecated: Use CancelReverseContactResp.ProtoReflect.Descriptor instead.
+func (*CancelReverseContactResp) Descriptor() ([]byte, []int) {
 	return file_chat_chat_proto_rawDescGZIP(), []int{74}
 }
 
@@ -5354,14 +5354,14 @@ const file_chat_chat_proto_rawDesc = "" +
 	"\x06userId\x18\x01 \x01(\tR\x06userId\"P\n" +
 	"\x14BlockContactListResp\x128\n" +
 	"\x05users\x18\x01 \x03(\v2\".openim.chat.common.UserPublicInfoR\x05users\"[\n" +
-	"\x15ReverseCreateBlockReq\x12 \n" +
+	"\x15CreateReverseBlockReq\x12 \n" +
 	"\vownerUserID\x18\x01 \x01(\tR\vownerUserID\x12 \n" +
 	"\vblockUserID\x18\x02 \x01(\tR\vblockUserID\"\x18\n" +
-	"\x16ReverseCreateBlockResp\"[\n" +
-	"\x15ReverseCancelBlockReq\x12 \n" +
+	"\x16CreateReverseBlockResp\"[\n" +
+	"\x15CancelReverseBlockReq\x12 \n" +
 	"\vownerUserID\x18\x01 \x01(\tR\vownerUserID\x12 \n" +
 	"\vblockUserID\x18\x02 \x01(\tR\vblockUserID\"\x18\n" +
-	"\x16ReverseCancelBlockResp\"7\n" +
+	"\x16CancelReverseBlockResp\"7\n" +
 	"\x13ReverseBlockListReq\x12 \n" +
 	"\vblockUserID\x18\x01 \x01(\tR\vblockUserID\"\x8e\x01\n" +
 	"\x10ReverseBlockInfo\x12 \n" +
@@ -5373,14 +5373,14 @@ const file_chat_chat_proto_rawDesc = "" +
 	"createTime\"K\n" +
 	"\x14ReverseBlockListResp\x123\n" +
 	"\x05users\x18\x01 \x03(\v2\x1d.openim.chat.ReverseBlockInfoR\x05users\"a\n" +
-	"\x17ReverseCreateContactReq\x12 \n" +
+	"\x17CreateReverseContactReq\x12 \n" +
 	"\vownerUserID\x18\x01 \x01(\tR\vownerUserID\x12$\n" +
 	"\rcontactUserID\x18\x02 \x01(\tR\rcontactUserID\"\x1a\n" +
-	"\x18ReverseCreateContactResp\"a\n" +
-	"\x17ReverseCancelContactReq\x12 \n" +
+	"\x18CreateReverseContactResp\"a\n" +
+	"\x17CancelReverseContactReq\x12 \n" +
 	"\vownerUserID\x18\x01 \x01(\tR\vownerUserID\x12$\n" +
 	"\rcontactUserID\x18\x02 \x01(\tR\rcontactUserID\"\x1a\n" +
-	"\x18ReverseCancelContactResp\"=\n" +
+	"\x18CancelReverseContactResp\"=\n" +
 	"\x15ReverseContactListReq\x12$\n" +
 	"\rcontactUserID\x18\x01 \x01(\tR\rcontactUserID\"\x94\x01\n" +
 	"\x12ReverseContactInfo\x12 \n" +
@@ -5566,17 +5566,17 @@ var file_chat_chat_proto_goTypes = []any{
 	(*UpdateContactResp)(nil),           // 61: openim.chat.UpdateContactResp
 	(*BlockContactListReq)(nil),         // 62: openim.chat.BlockContactListReq
 	(*BlockContactListResp)(nil),        // 63: openim.chat.BlockContactListResp
-	(*ReverseCreateBlockReq)(nil),       // 64: openim.chat.ReverseCreateBlockReq
-	(*ReverseCreateBlockResp)(nil),      // 65: openim.chat.ReverseCreateBlockResp
-	(*ReverseCancelBlockReq)(nil),       // 66: openim.chat.ReverseCancelBlockReq
-	(*ReverseCancelBlockResp)(nil),      // 67: openim.chat.ReverseCancelBlockResp
+	(*CreateReverseBlockReq)(nil),       // 64: openim.chat.CreateReverseBlockReq
+	(*CreateReverseBlockResp)(nil),      // 65: openim.chat.CreateReverseBlockResp
+	(*CancelReverseBlockReq)(nil),       // 66: openim.chat.CancelReverseBlockReq
+	(*CancelReverseBlockResp)(nil),      // 67: openim.chat.CancelReverseBlockResp
 	(*ReverseBlockListReq)(nil),         // 68: openim.chat.ReverseBlockListReq
 	(*ReverseBlockInfo)(nil),            // 69: openim.chat.ReverseBlockInfo
 	(*ReverseBlockListResp)(nil),        // 70: openim.chat.ReverseBlockListResp
-	(*ReverseCreateContactReq)(nil),     // 71: openim.chat.ReverseCreateContactReq
-	(*ReverseCreateContactResp)(nil),    // 72: openim.chat.ReverseCreateContactResp
-	(*ReverseCancelContactReq)(nil),     // 73: openim.chat.ReverseCancelContactReq
-	(*ReverseCancelContactResp)(nil),    // 74: openim.chat.ReverseCancelContactResp
+	(*CreateReverseContactReq)(nil),     // 71: openim.chat.CreateReverseContactReq
+	(*CreateReverseContactResp)(nil),    // 72: openim.chat.CreateReverseContactResp
+	(*CancelReverseContactReq)(nil),     // 73: openim.chat.CancelReverseContactReq
+	(*CancelReverseContactResp)(nil),    // 74: openim.chat.CancelReverseContactResp
 	(*ReverseContactListReq)(nil),       // 75: openim.chat.ReverseContactListReq
 	(*ReverseContactInfo)(nil),          // 76: openim.chat.ReverseContactInfo
 	(*ReverseContactListResp)(nil),      // 77: openim.chat.ReverseContactListResp
