@@ -496,6 +496,14 @@ message GetContactListByUserIdsResp {
   repeated openim.chat.common.Contact users = 1;
 }
 
+message GetReverseContactReq {
+  string contactID = 1;
+}
+
+message GetReverseContactResp {
+  repeated openim.chat.common.Contact users = 1;
+}
+
 service chat {
   // Edit personal information - called by the user or an administrator
   rpc UpdateUserInfo(UpdateUserInfoReq) returns (UpdateUserInfoResp);
